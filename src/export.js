@@ -41,7 +41,6 @@ var addToCalendar = (e) => {
                 interval: 1
             };
             var description = courseObject.title;
-            console.log(courseObject)
             startDate = setTime(startDate, meeting.startTime);
             endDate = setTime(startDate, meeting.endTime);
             cal.addEvent(name, description, location, startDate, endDate, rrule);
