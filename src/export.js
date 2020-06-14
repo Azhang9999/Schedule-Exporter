@@ -1,4 +1,4 @@
-var courseIDs = new Set();
+ var courseIDs = new Set();
 document.querySelectorAll("tbody input").forEach((e) => {
     let reg = /checkbox_(\d+)/
     if (e.checked) {
@@ -22,6 +22,8 @@ var daysMap = {
     S: "SA",
     U: "SU"
 }
+
+
 var addToCalendar = (e) => {
     let courseObject = e;
     if (courseObject.meetings.length > 0 && checked(e)) {
@@ -30,12 +32,14 @@ var addToCalendar = (e) => {
             var location = meeting.building;
             var days = [];
             [...meeting.daysRaw].forEach(d => days.push(daysMap[d]));
+            var startDate = meeting.startDate.replace("Z", "");
+            var endDate = meeting.endDate.replace("Z", "")
             var rrule = {
                 freq: "WEEKLY",
+                until: new Date(endDate),
                 byday: days,
                 interval: 1
             };
-            var startDate = meeting.startDate.replace("Z", "");
             startDate = setTime(startDate, meeting.startTime);
             endDate = setTime(startDate, meeting.endTime);
             cal.addEvent(name, "", location, startDate, endDate, rrule);
