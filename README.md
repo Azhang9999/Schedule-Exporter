@@ -1,3 +1,5 @@
+This project is directly forked from https://github.com/ziyaointl/Schedule-Exporter, with a few minor changes so that it can be ported to Firefox. Furthermore, the end date option is used so that the schedules is contained withing the time period of the semester and the description is the title of the course. Massive credit once again to xiyaointl, as 99% of the code is not touched.
+
 ## Berkeley Schedule Exporter
 
 Export your Berkeley class schedule to .ics! (which can be imported to Google Calendar). Should also work with other schools that use collegescheduler.com.
@@ -6,9 +8,8 @@ Note: This is not a novel idea and a number of people have done something simila
 
 ### Installation
 
-[Chrome Web Store](https://chrome.google.com/webstore/detail/berkeley-schedule-exporte/adnjnncenfmhbfaggmchmfelhbafbkmn?hl=en)
-
-If you want to install from source, download the repo as a zip file. Go to chrome://extensions, enable developer mode, select import, and select the folder extracted from the zip file.
+You can try it out as of now using developer mode. Make sure you turn off Firefox's require signature field for addons in about:config and temporarily load the addon through about:debugging. Check out firefox's guide if you have any questions.
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension
 
 ### Usage
 
