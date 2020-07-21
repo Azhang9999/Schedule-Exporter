@@ -1,4 +1,4 @@
-This project is directly forked from https://github.com/ziyaointl/Schedule-Exporter, with a few minor changes so that it can be ported to Firefox. Furthermore, the end date option is used so that the schedules is contained withing the time period of the semester and the description is the title of the course. Massive credit once again to xiyaointl, as 99% of the code is not touched. Much of the readme document below isn't touched either, and the only part edited is the installation instructions.
+This project is directly forked from https://github.com/ziyaointl/Schedule-Exporter, with a few minor changes so that it can be ported to Firefox. Furthermore, the end date option is used so that the schedules is contained within the time period of the semester and the description is the title of the course. Massive credit once again to xiyaointl, as 99% of the code is not touched. Much of the readme document below isn't touched either, and the only part edited is the installation instructions.
 
 ## Berkeley Schedule Exporter
 
